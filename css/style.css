@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/*共通部分
+---------------*/
+html{
+  font-size: 100%;
+}
+body{
+  font-family: serif;
+  line-height: 1.7;
+  color:white;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+/*header
+----------------------*/
+h1 a{
+  font-size: 28px;
+  margin-left: 20px;
+  color: white;
+}
+h1 a:hover{
+  color: #4b0082;
+}
+.home-nav{
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  list-style: none;
+}
+.home-nav li{
+  border: 1px white solid;
+  padding: 2px;
+  margin-left: 5px;
+  background-color:  rgba(100, 100, 100, 0.8);
+}
+.home-nav a{
+  color: white;
+}
+.home-nav a:hover{
+  color: yellowgreen;
+}
+.home-header{
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.home{
+  height: 110vh;
+}
+.biga{
+  text-align: center;
+  background-image: url(../img/Home1.jpg);
+  background-size: contain;
+  height: 75vh;
+  position: relative;
+}
+.title{
+  font-size: 100px;
+  font-weight: lighter;
+}
+.p-team{
+  position: absolute;
+  top:120px;
+  right: 60px;
+  border: 2px white dotted;
+  padding: 18px;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+.p-team ul{
+  list-style: none;
+}
+.p-team h3{
+  border-bottom: 1px white dashed;
+}
+.p-team h4{
+  width: 30px;
+  border-bottom: 1px white solid;
+}
+.p-team li a{
+  color: white;
+}
+.p-team li a:hover{
+  color:  yellowgreen;
+}
+.home-p{
+  font-size: 24px;
+  margin-left: 180px;
+
+}
+.attention{
+  margin-top: 30px;
+  text-align: center;
+}
+/*footer*/
+footer{
+  border-top: 3px white double;
+  background: #101010;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  margin-top: 20px;
+}
+/*レスポンシブ*/
+@@media (max-width:600px) {
+  .title{
+    font-size: 2.5rem;
+  }
+  .home-nav{
+    font-size: 1rem;
+  }
+  .home{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* お問い合わせ */
+.contact{
+  background-image: url(../img/contact2.jpg);
+  background-size: contain;
+  height: 83vh;
+}
+/*チーム背景指定*/
+#team{
+  background-image: url(../img/team-1.jpg);
+  background-size: cover;
+  height: 80vh;
+}
+/*チーム*/
+.team-name{
+  width: 1000px;
+  padding-left: 200px;
+  font-size: 60px;
+  border-bottom: 3px white solid;
+  background-color:  rgba(30, 30, 30, 0.8);
+  font-weight: lighter;
+}
+#team p{
+  padding-top: 10px;
+  padding-left: 200px;
+  font-size: 20px;
+  background-color:  rgba(30, 30, 30, 0.8);
+  border-bottom: 1px white dotted;
+  width: 800px;
+}
+.team-p{
+  width: 1000px;
+  padding-top: 20px;
+  padding-left: 200px;
+  font-size: 20px;
+  background-color:  rgba(30, 30, 30, 0.8);
+  border: 1px white dotted;
+  border-radius: 0 10px 10px 0px;
+}
+/*aside*/
+.team-aside{
+  border: 2px white dotted;
+  padding: 18px;
+  background-color: rgba(30, 30, 30, 0.7);
+}
+.team-aside ul{
+  list-style: none;
+}
+.team-aside h3{
+  border-bottom: 1px white dashed;
+}
+.team-aside h4{
+  width: 30px;
+  border-bottom: 1px white solid;
+}
+.team-aside a{
+  color: white;
+}
+.team-aside li a:hover{
+  color:  yellowgreen;
+}
+/*配分*/
+article{
+  width: 70%;
+}
+aside{
+  width: 25%;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+/*チームごとのコンテンツ*/
+.contents{
+  background-color:  rgba(30, 30, 30, 0.8);
+  border: 2px  #4b0082 dotted;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.contents h2{
+  border-bottom: 1px white solid;
+  width: 700px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+.contents h3{
+  font-weight: lighter;
+  margin-bottom: 18px;
+  padding-left: 20px;
+}
+.contents p{
+  font-weight: lighter;
+  margin-bottom: 18px;
+  border: 1px white dotted;
+  border-radius: 5px;
+  padding: 10px;
+}
+iframe{
+  border-radius: 10px;
+}
