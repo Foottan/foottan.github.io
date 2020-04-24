@@ -109,19 +109,7 @@ footer{
   font-size: 20px;
   margin-top: 20px;
 }
-/*レスポンシブ*/
-@@media (max-width:600px) {
-  .title{
-    font-size: 2.5rem;
-  }
-  .home-nav{
-    font-size: 1rem;
-  }
-  .home{
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 /* お問い合わせ */
 .contact{
   background-image: url(../img/contact2.jpg);
